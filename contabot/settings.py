@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'contabot',
         'USER': 'contabot',
-        'HOST': '127.0.0.1',
+        'HOST': os.environ["PG_HOST"],
         'PASSWORD': 'contabot',
         'PORT': 5432,
     }
